@@ -1,4 +1,4 @@
-import Image from 'next/image';
+
 import React from 'react';
 
 function Bestsale({ data }) {
@@ -10,7 +10,7 @@ function Bestsale({ data }) {
                 return (
                     <div className="col-md-3" key={id}>
                     <div className="border_main">
-                    <div className="image_4"><Image style={{height: '200px'}} src={`http://localhost:3000/images/${image}`} alt={name}/></div>
+                    <div className="image_4"><img style={{height: '200px'}} src={`http://localhost:3000/images/${image}`} alt={name}/></div>
                         <div className="card-body text-center">
                             <h5 className="card-title text-success">{name}</h5>
                             <p className="text-danger m-0">
