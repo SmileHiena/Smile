@@ -4,7 +4,7 @@ import { useSelector, useDispatch } from 'react-redux';
 import { removeFromCart, updateCartItemQuantity } from '../redux/slices/cartSlice';
 import { useMemo } from 'react';
 import Link from 'next/link';
-import Image from 'next/image';
+
 
 export default function Cart() {
     const cartItems = useSelector((state) => state.cart?.items) || [];
@@ -47,7 +47,7 @@ export default function Cart() {
                                             <tr key={item._id}>
                                                 <td className="thumbnail-img">
                                                     <a href="#">
-                                                        <Image className="img-fluid" style={{ width: "100px" }} src={`http://localhost:3000/${item.img}`} alt={item.name} />
+                                                        <img className="img-fluid" style={{ width: "100px" }} src={`http://localhost:3000/${item.img}`} alt={item.name} />
                                                     </a>
                                                 </td>
                                                 <td className="name-pr">
