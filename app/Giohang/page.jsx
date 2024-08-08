@@ -7,10 +7,10 @@ import Link from 'next/link';
 
 
 export default function Cart() {
-    // const cartItems = useSelector((state) => state.cart?.items) || [];
+    const cartItems = useSelector((state) => state.cart?.items) || [];
     const dispatch = useDispatch();
 
-    const cartItems = useMemo(() => calculateCartItems(), []);
+    // const cartItems = useMemo(() => calculateCartItems(), []);
 
     const total = useMemo(() => cartItems.reduce((total, item) => total + item.price * item.quantity, 0), [cartItems]);
 
