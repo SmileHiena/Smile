@@ -20,6 +20,7 @@ export default function RootLayout({ children }) {
         <meta name="author" content="" />
         <link rel="icon" href="/images/fevicon.png" type="image/gif" />
         <link rel="stylesheet" href="/css/bootstrap.min.css" />
+        
         <link rel="stylesheet" href="/css/style.css" />
         <link rel="stylesheet" href="/css/custom.css" />
         {/* <link rel="stylesheet" href="/css2/style.css" /> */}
@@ -43,16 +44,16 @@ export default function RootLayout({ children }) {
       
       <Footer />
       </Provider>
-      <script src="/js/jquery.min.js"></script>
-      <script src="/js/popper.min.js"></script>
-      <script src="/js/bootstrap.bundle.min.js"></script>
-      <script src="/js/jquery-3.0.0.min.js"></script>
-      <script src="/js/plugin.js"></script>
-      <script src="/js/jquery.mCustomScrollbar.concat.min.js"></script>
-      <script src="/js/custom.js"></script>
+      <script src="/js/jquery.min.js" async></script>
+      <script src="/js/popper.min.js" async></script>
+      <script src="/js/bootstrap.bundle.min.js" async></script>
+      <script src="/js/jquery-3.0.0.min.js" async></script>
+      <script src="/js/plugin.js" async></script>
+      <script src="/js/jquery.mCustomScrollbar.concat.min.js" async></script>
+      <script src="/js/custom.js" async></script>
       {/* <script src="/js2/custom.js"></script> */}
-      <script src="/js/owl.carousel.js"></script>
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.js"></script>
+      <script src="/js/owl.carousel.js" async></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.js" async></script>
 
       </body>
       </html>
