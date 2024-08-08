@@ -1,17 +1,23 @@
 'use client';
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import { useSelector, useDispatch } from 'react-redux';
 import { removeFromCart, updateCartItemQuantity } from '../redux/slices/cartSlice';
 import { useMemo } from 'react';
 import Link from 'next/link';
 
-
 export default function Cart() {
-    const cartItems = useSelector((state) => state.cart?.items) || [];
+    const [cartItems, setCartItems] = useState([]);
     const dispatch = useDispatch();
 
-    // const cartItems = useMemo(() => calculateCartItems(), []);
+    // Lấy cart items từ localStorage khi chạy trên client-side
+    useEffect(() => {
+        if (typeof window !== 'undefined') {
+            const storedCartItems = JSON.parse(localStorage.getItem('cartItems')) || [];
+            setCartItems(storedCartItems);
+        }
+    }, []);
 
+    // Tính toán tổng số tiền
     const total = useMemo(() => cartItems.reduce((total, item) => total + item.price * item.quantity, 0), [cartItems]);
 
     const handleQuantityChange = (itemId, quantity) => {
@@ -103,7 +109,6 @@ export default function Cart() {
                                 <input value="Buy Product" type="submit" />
                             </div>
                         </div>
-                        
                     </div>
 
                     <div className="row my-5">
