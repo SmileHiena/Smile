@@ -63,7 +63,7 @@ const handleLogout = () => {
                 <div className="container-fluid">
                     <div className="logo">
                         <a href="/">
-                            <img src="http://localhost:3000/images/logo.png" alt="Logo" />
+                            <img src="images/logo.png" alt="Logo" />
                         </a>
                     </div>
                     
