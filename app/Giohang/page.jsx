@@ -4,10 +4,8 @@ import { useSelector, useDispatch } from 'react-redux';
 import { removeFromCart, updateCartItemQuantity } from '../redux/slices/cartSlice';
 import { useMemo } from 'react';
 import Link from 'next/link';
-import { sql } from "@vercel/postgres";
 
-export default function Cart({ params }) {
-      const { rows } = await sql`SELECT * from CARTS where user_id=${params.user}`;
+export default function Cart() {
     const [cartItems, setCartItems] = useState([]);
     const dispatch = useDispatch();
 
