@@ -4,7 +4,7 @@ import { useSelector, useDispatch } from 'react-redux';
 import { removeFromCart, updateCartItemQuantity} from '../redux/slices/cartSlice';
 import { useMemo } from 'react';
 import Link from 'next/link';
-import Image from 'next/image';
+
 
 
 
@@ -36,7 +36,7 @@ export default function Cart() {
                                 <tr>
                                     <td className="thumbnail-img">
                                         <a href="#">
-									<Image className="img-fluid" style={{width: "100px"}} src="images/img-10.png" alt="" />
+									<img className="img-fluid" style={{width: "100px"}} src="images/img-10.png" alt="" />
 								</a>
                                     </td>
                                     <td className="name-pr">
@@ -60,7 +60,7 @@ export default function Cart() {
                                 <tr>
                                     <td className="thumbnail-img">
                                         <a href="#">
-									<Image className="img-fluid" style={{width: "100px"}} src="images/img-9.png" alt="" />
+									<img className="img-fluid" style={{width: "100px"}} src="images/img-9.png" alt="" />
 								</a>
                                     </td>
                                     <td className="name-pr">
@@ -84,7 +84,7 @@ export default function Cart() {
                                 <tr>
                                     <td className="thumbnail-img">
                                         <a href="#">
-									<Image className="img-fluid" style={{width: "100px"}} src="images/img-8.png" alt="" />
+									<img className="img-fluid" style={{width: "100px"}} src="images/img-8.png" alt="" />
 								</a>
                                     </td>
                                     <td className="name-pr">
