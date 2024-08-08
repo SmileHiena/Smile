@@ -4,7 +4,7 @@ import Footer from './footer';
 import { Provider } from 'react-redux';
 import { store } from './redux/store';
 import Script from 'next/script';
-import "bootstrap/dist/css/bootstrap.min.css";
+
 
 export default function RootLayout({ children }) {
   return (
@@ -18,6 +18,7 @@ export default function RootLayout({ children }) {
           <meta name="description" content="" />
           <meta name="author" content="" />
           <link rel="icon" href="/images/fevicon.png" type="image/gif" />
+          <link rel="stylesheet" href="/css/bootstrap.min.css" />
           <link rel="stylesheet" href="/css/style.css" />
           <link rel="stylesheet" href="/css/custom.css" />
           <link rel="stylesheet" href="/css/test.css" />
