@@ -4,8 +4,10 @@ import { useSelector, useDispatch } from 'react-redux';
 import { removeFromCart, updateCartItemQuantity } from '../redux/slices/cartSlice';
 import { useMemo } from 'react';
 import Link from 'next/link';
+import { sql } from "@vercel/postgres";
 
-export default function Cart() {
+export default function Cart({ params }) {
+      const { rows } = await sql`SELECT * from CARTS where user_id=${params.user}`;
     const [cartItems, setCartItems] = useState([]);
     const dispatch = useDispatch();
 
@@ -34,6 +36,13 @@ export default function Cart() {
 
     return (
         <>
+            <div>
+              {rows.map((row) => (
+                <div key={row.id}>
+                  {row.id} - {row.quantity}
+                </div>
+              ))}
+            </div>
             <div className="cart-box-main" style={{ padding: "70px 0px" }}>
                 <div className="container">
                     <div className="row">
