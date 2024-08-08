@@ -1,4 +1,4 @@
-import Image from 'next/image';
+
 export const metadata = {
     title: "Contact Us",
     description: "Mua đồng hồ nam đẹp, trẻ trung, đồng hồ chất lượng, thiết kế mới, thoải mái từ thương hiệu UNIQLO với nhiều kiểu dáng cùng chất lượng",
@@ -24,7 +24,7 @@ export default function ContactUs() {
                   </div>
                 </div>
                 <div className="col-md-6 padding_right_0">
-                  <div className="map_section"><Image src="images/map-img.png"/></div>
+                  <div className="map_section"><img src="images/map-img.png"/></div>
                 </div>
               </div>
             </div>

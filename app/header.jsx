@@ -3,7 +3,7 @@ import { useEffect, useState } from 'react';
 import Link from 'next/link';
 import { useDispatch, useSelector } from 'react-redux';
 import { logout } from './redux/slices/userSlices';
-import Image from 'next/image';
+
 // import { logout } from '../redux/slices/userSlice';
 
 export default function Header() {
@@ -63,7 +63,7 @@ const handleLogout = () => {
                 <div className="container-fluid">
                     <div className="logo">
                         <a href="/">
-                            <Image src="http://localhost:3000/images/logo.png" alt="Logo" />
+                            <img src="http://localhost:3000/images/logo.png" alt="Logo" />
                         </a>
                     </div>
                     
@@ -79,7 +79,7 @@ const handleLogout = () => {
                                 <>
                                    <Link href={isLoggedIn ? '/info' : '/dangnhap'} >
                                         {isLoggedIn && user.image ? (
-                                            <Image src={`http://localhost:3000/${user.image}`} alt="Avatar" style={{width: '50px'}} />
+                                            <img src={`http://localhost:3000/${user.image}`} alt="Avatar" style={{width: '50px'}} />
                                         ) : (
                                             <i className="fas fa-user" />
                                         )}

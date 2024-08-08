@@ -1,7 +1,7 @@
 import Link from "next/link";
 import ProductCard from "./component/ProductCard";
 import Hot from "./component/Hot";
-import Image from 'next/image';
+
 import Counter from "./components/counter";
 
 export const metadata = {
@@ -68,7 +68,7 @@ export default async function Home() {
             <div className="watchs_section_2">
               <div className="row">
                 <div className="col-md-6">
-                  <div className="image_1"><Image src="images/img-1.png" /></div>
+                  <div className="image_1"><img src="images/img-1.png" /></div>
                    </div>
                 <div className="col-md-6">
                   <h4 className="uni_text">Uni Watch</h4>
@@ -87,7 +87,7 @@ export default async function Home() {
                   <div className="read_bt1"><a href="#">Buy Now</a></div>
                    </div>
                 <div className="col-md-6">
-                  <div className="image_2"><Image src="images/img-2.png" /></div>
+                  <div className="image_2"><img src="images/img-2.png" /></div>
                    </div>
                 </div>
              </div>
@@ -114,7 +114,7 @@ export default async function Home() {
                   <div className="read_bt1"><a href="#">Buy Now</a></div>
                    </div>
                 <div className="col-md-6">
-                  <div className="image_2"><Image src="images/img-3.png" /></div>
+                  <div className="image_2"><img src="images/img-3.png" /></div>
                    </div>
                 </div>
              </div>
@@ -122,22 +122,22 @@ export default async function Home() {
               <div className="row">
                 <div className="col-md-3">
                   <div className="border_main">
-                    <div className="image_4"><Image src="images/img-4.png" /></div>
+                    <div className="image_4"><img src="images/img-4.png" /></div>
                       </div>
                    </div>
                 <div className="col-md-3">
                   <div className="border_main">
-                    <div className="image_4"><Image src="images/img-5.png" /></div>
+                    <div className="image_4"><img src="images/img-5.png" /></div>
                       </div>
                    </div>
                 <div className="col-md-3">
                   <div className="border_main">
-                    <div className="image_4"><Image src="images/img-7.png" /></div>
+                    <div className="image_4"><img src="images/img-7.png" /></div>
                       </div>
                    </div>
                 <div className="col-md-3">
                   <div className="border_main">
-                    <div className="image_4"><Image src="images/img-5.png" /></div>
+                    <div className="image_4"><img src="images/img-5.png" /></div>
                       </div>
                    </div>
                 </div>
@@ -156,7 +156,7 @@ export default async function Home() {
                       </div>
                   <div className="client_main">
                     <div className="client_left">
-                      <div className="client_img"><Image src="images/client-img.png" /></div>
+                      <div className="client_img"><img src="images/client-img.png" /></div>
                          </div>
                     <div className="client_right">
                       <h6 className="client_name">Jamesh Dame</h6>
@@ -170,7 +170,7 @@ export default async function Home() {
                       </div>
                   <div className="client_main">
                     <div className="client_left">
-                      <div className="client_img"><Image src="images/client-img1.png" /></div>
+                      <div className="client_img"><img src="images/client-img1.png" /></div>
                          </div>
                     <div className="client_right">
                       <h6 className="client_name">Jumini Kiri</h6>
@@ -201,7 +201,7 @@ export default async function Home() {
                       </div>
                    </div>
                 <div className="col-md-6 padding_right_0">
-                  <div className="map_section"><Image src="images/map-img.png" /></div>
+                  <div className="map_section"><img src="images/map-img.png" /></div>
                    </div>
                 </div>
              </div>
