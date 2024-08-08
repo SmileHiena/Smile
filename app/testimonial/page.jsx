@@ -1,4 +1,4 @@
-import Image from 'next/image';
+
 export const metadata = {
     title: "Testimonial Shop",
     description: "Mua đồng hồ nam đẹp, trẻ trung, đồng hồ chất lượng, thiết kế mới, thoải mái từ thương hiệu UNIQLO với nhiều kiểu dáng cùng chất lượng",
@@ -18,7 +18,7 @@ export default function testimonial() {
                        </div>
                        <div className="client_main">
                           <div className="client_left">
-                             <div className="client_img"><Image src="images/client-img.png"/></div>
+                             <div className="client_img"><img src="images/client-img.png"/></div>
                           </div>
                           <div className="client_right">
                              <h6 className="client_name">Jamesh Dame</h6>
@@ -32,7 +32,7 @@ export default function testimonial() {
                        </div>
                        <div className="client_main">
                           <div className="client_left">
-                             <div className="client_img"><Image src="images/client-img1.png"/></div>
+                             <div className="client_img"><img src="images/client-img1.png"/></div>
                           </div>
                           <div className="client_right">
                              <h6 className="client_name">Jumini Kiri</h6>
