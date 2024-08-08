@@ -2,7 +2,7 @@
 import React from 'react';
 import { useState } from 'react';
 import { useEffect } from 'react';
-import Image from 'next/image';
+
 
 export default function Info() {
     // Lấy token từ cookie ở browser
@@ -34,7 +34,7 @@ export default function Info() {
             <h2 className="text-white">Profile</h2>
             <div className="profile-details">
                     <>
-                    {user.image && <Image src={`http://localhost:3000/${user.image}`} alt="Avatar" width="100" />}
+                    {user.image && <img src={`http://localhost:3000/${user.image}`} alt="Avatar" width="100" />}
                             <div>
                                 {/* <p className="text-white">Id: {user.id}</p> */}
                                 <p className="text-white">Full Name: {user.fullname}</p>
